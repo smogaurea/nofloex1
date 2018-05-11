@@ -1,0 +1,15 @@
+{
+  "id": "2ba649f3-c6cc-4d1a-bf0e-6f7f2ce8a30f",
+  "label": "nofloex1 NoFlo runtime",
+  "secret": "gunadepabo",
+  "permissions": {
+    "gunadepabo": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
