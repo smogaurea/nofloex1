@@ -1,4 +1,0 @@
-GGG(summe) OUT -> IN Display(core/Output)
-
-# Start off the graph by sending a filename to the file reader
-8 -> x GGG

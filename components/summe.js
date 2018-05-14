@@ -17,12 +17,17 @@ exports.getComponent = () => {
     });
 
     c.process((input,output) => {
-        console.log(input.getData('x'),input.getData('y'));
+        //console.log(input.getData('x'),input.getData('y'));
+        //[callback, data] = input.getData 'callback', 'in'
+        if (!input.hasData('x', 'y')) {
+            return;
+          }
+        let x=0;
+        let y =0;
+        [x,y] = input.getData('x','y');
         
-        // let x = Number(input.getData('x'));
-        // let y = Number(input.getData('y'));
         output.send({
-            out:'x + y'
+            out:x + y
         })
         output.done();
     });

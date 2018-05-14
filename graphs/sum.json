@@ -1,0 +1,63 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "sss",
+        "description": "sss",
+        "icon": "cog",
+        "environment": {
+            "type": "all"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "test1/sumcom_hh9k8": {
+            "component": "summe",
+            "metadata": {
+                "label": "summe",
+                "x": 540,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_291ix": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 684,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "test1/sumcom_hh9k8",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Output_291ix",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": 4,
+            "tgt": {
+                "process": "test1/sumcom_hh9k8",
+                "port": "x"
+            }
+        },
+        {
+            "data": 5,
+            "tgt": {
+                "process": "test1/sumcom_hh9k8",
+                "port": "y"
+            }
+        }
+    ]
+}
